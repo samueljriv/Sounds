@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public GameObject Obstacle;
+    public AudioSource Source;
     public TextMeshProUGUI PointsDisplay;
     public TextMeshProUGUI LivesDisplay;
     public AudioClip BreakClip;
@@ -130,11 +131,13 @@ public class GameManager : MonoBehaviour
     void WinGame()
     {
         Debug.Log("YOU WIN!");
+        Source.Stop();
         DoingGame = false;
     }
     void LoseGame()
     {
         Debug.Log("YOU LOSE!");
+        Source.Stop();
         DoingGame = false;
     }
 }

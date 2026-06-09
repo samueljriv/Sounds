@@ -923,6 +923,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   Obstacle: {fileID: 0}
+  Source: {fileID: 967086669}
   PointsDisplay: {fileID: 59826663}
   LivesDisplay: {fileID: 1974996823}
   BreakClip: {fileID: 8300000, guid: 9c474d549041b544aa698af3f4b1db71, type: 3}
